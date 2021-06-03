@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="./assets/images/title.svg">
+
+    <!-- Add Your Site Title -->
+    <title>Khasim Sharif Shaik | A Full Stack Developer.</title>   
+
+    <meta name="description" content="I am passionate about my work.">
+    <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+    <meta name="keywords" content="khasim sharif shaik, React, NodeJs" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Sans+HK:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+
+<!-- header section Start -->
+
+    <header class="header" role="banner" id="top">
+        <div class="topnav">
+            <a class="active" href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#work">My Work</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>            
+        </div>
+        <div class="hero__text">
+            <div class="hero__content">
+                <h1>Khasim Sharif Shaik</h1>
+                <p>I'M &ensp;<span style="color: #04AA6D;" class="typed" data-typed-items="A Full stack Developer., A Machine Learning Enthusiast., Freelancer., Photographer."></span></p>
+                <a href="#contact" class="btn">Get in touch</a>
+                <div class="social-links mt-3 text-center">
+                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></i></a>
+                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                    <a href="#" class="google-plus"><i class="fa fa-skype"></i></a>
+                    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                  </div>
+                
+            </div>
+            <div class="hero__image">
+                <img src="./assets/images/hero.png">
+            </div>
+        </div>      
+        <div class="icon-bar">
+            <a href="#"><i class="fa fa-home"></i></a> 
+            <a href="#about"><i class="fa fa-info-circle"></i></a> 
+            <a href="#work"><i class="fa fa-code"></i></a>
+            <a href="#skills"><i class="fa fa-language"></i></a>             
+            <a href="#contact"><i class="fa fa-envelope"></i></a> 
+          </div>  
+    </header>
+<!-- /////////////////////////// header section End  ///////////////////////////-->
+<!-- main Section Start -->
+
+<main role="main">
+    <!-- About Section Start -->
+    <section class="about" id="about">
+        <h1 class="heading_section">About</h1>
+        <div class="media">
+            <div class="image"><img src="./assets/images/about.jpg"  alt="About Image"></div>
+              <div class="content">
+                  <p>Graduate of computer science with experience working across the full-stack of software development. I’ve built projects on small teams and I’m looking for a role where I can grow and continue to learn from other experienced team members..</p>
+                  <a href="#" class="btn">My Resume</a>
+                </div>
+          </div>
+    </section>
+    <section class="about_sec" >
+        <!-- <div class="media"></div>            -->
+    </section>
+    <!-- /////////////////////////// About Section End  ///////////////////////////-->
+    <!-- Work Section Start -->
+    <!-- <section class="work" id="work">
+        <div class="work_button" style="text-align: center;color: white;">
+            <input class="btn" type="button" value="All">
+            <input class="btn" type="button" value="All">
+            <input class="btn" type="button" value="All">
+        </div>
+    </section> -->
+    <section class="work" id="work">
+        <h1 class="heading_section">Works</h1>
+        <div class="work_button" style="text-align: center;color: white;">
+            <button class="btn_link" id="btn_all" onclick="openPage('All_tab',this.id)">All</button>
+            <button class="btn_link" id="btn_work" onclick="openPage('work_tab',this.id)">My work</button>
+            <button class="btn_link" id="btn_freelancer" onclick="openPage('freelancer_tab',this.id)">Freelancer</button>
+        </div>
+        <div class="work_show">
+            <div id="All_tab" class="tabcontent"></div>
+            <div id="work_tab" class="tabcontent"></div>
+            <div id="freelancer_tab" class="tabcontent"> </div>
+        </div>
+    </section>
+    <!--/////////////////////////// Work Section End ///////////////////////////-->
+    <!-- Skill section Start -->
+    <section class="skills" id="skills" >
+        <h1 class="heading_section">Skills</h1>
+        <div class="row">
+            <div class="skill_container">
+              <img src="./assets/images/html.png" class="Skill_logo" alt="HTML" />
+              <img src="./assets/images/css.png" class="Skill_logo" alt="CSS" />
+              <img src="./assets/images/bootstrap.png" class="Skill_logo" alt="Bootstrap" />
+              <img src="./assets/images/react-img.png" class="Skill_logo" alt="react" />
+              <img src="./assets/images/javascript.png" class="Skill_logo" alt="Javascript" />
+              <img src="./assets/images/ts.png" class="Skill_logo" alt="typescript" />
+              <img src="./assets/images/node.png" class="Skill_logo" alt="Node.Js" />
+              <img src="./assets/images/mongo.png" class="Skill_logo" alt="MongoDB" />
+              <img src="./assets/images/python.png" class="Skill_logo" alt="Python" />
+            </div>
+        </div>
+    </section>
+    <!--/////////////////////////// Skill section End ///////////////////////////-->
+    <!-- contact section Start -->
+    <section class="contact" id="contact">
+        <h1 class="heading_section">Get in Touch</h1>
+        <div class="contact_text">
+            <span>Are you looking for a fast-performing and user-friendly website to represent your product or business? or looking for any kind of consultation? or want to ask questions? or have some advice for me or just want to say "Hi 👋" in any case feel free to Let me know. I will do my best to respond back. 😊 The quickest way to reach out to me is via an email.</span>
+        </div>
+        <a href="#" class="btn" style="margin-left:15%;">Mail Me</a>
+    </section>
+    <!--/////////////////////////// contact section End ///////////////////////////-->
+</main>
+
+<!-- /////////////////////////// main Section End /////////////////////////// -->
+<!-- footer Section Start -->
+<footer id="footer" role="footer_banner">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>publicly</span></strong>
+      </div>
+      <div class="credits">
+        Designed by <a href="https://www.instagram.com/_khasim_sharif/">Khasim Sharif Shaik</a>
+      </div>
+    </div>
+  </footer>
+<!-- /////////////////////////// footer Section End ///////////////////////////-->
+<!-- script Start -->
+
+<script src="assets/js/script.js"></script>
+<!--/////////////////////////// script End ///////////////////////////-->
+</body>
+</html>
