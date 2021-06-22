@@ -5,23 +5,23 @@ var data = [
     languages: "Html,Css,javascript",
     image:"./assets/images/spotify.png",
     link:"https://spotify-my-self-beaware.netlify.app/",
-    note: ["Note: ","only web"],
+    note: ["Note: ","only web Support"],
   },
   {
     type:"freelancer_tab",   
-    title:"",
-    languages: "",
-    image:"./assets/images/404_page_cover.jpg",
-    link:"#",
-    note: ["Note: ",""],
+    title:"Education",
+    languages:"Html, css, bootstrap, jquery ",
+    image:"./assets/images/children_games.png",
+    link:"https://children-games-myself-beaware.netlify.app",
+    note: ["Note: ","Mobile and web Support"],
   },
   {
     type:"work_tab",  
-    title:"",
-    languages: "",
-    image:"./assets/images/404_page_cover.jpg", 
-    link:"#",
-    note: ["Note: ",""],
+    title:"Bubble Game",
+    languages: "Html(Canvas), Css, javascript",
+    image:"./assets/images/bubble_game.png", 
+    link:"https://bubblegame-myself-beaware.netlify.app",
+    note: ["Note: ","Only web Support"],
   },
   {
     type:"work_tab", 
@@ -39,6 +39,7 @@ var data = [
     link:"#",
     note: ["Note: ",""],
   },
+  
 ]
 if ($('.typed').length) {
     var typed_strings = $(".typed").data('typed-items');
@@ -107,7 +108,7 @@ function AddSheets(params){
         <img src="${obj.image}" alt="Avatar" class="card_image" style="width:100%;height:150px">
         <div class="card_middle">
           <div class="card_text">
-          <h1><a href="${obj.link}" style="text-decoration: none;">${obj.title}</a></h1>
+          <h3><a href="${obj.link}" style="text-decoration: none;">${obj.title}</a></h3>
           <p><strong>used Languages:</strong> ${obj.languages}</p>
           <p style="color:red"><strong>${obj.note[0]}</strong> ${obj.note[1]}</p>
           </div>
@@ -128,7 +129,7 @@ if(params==="work_tab"){
           <img src="${obj.image}" alt="Avatar" class="card_image" style="width:100%;height:150px">
           <div class="card_middle">
             <div class="card_text">
-            <h1><a href="${obj.link}" style="text-decoration: none;">${obj.title}</a></h1>
+            <h3><a href="${obj.link}" style="text-decoration: none;">${obj.title}</a></h3>
             <p><strong>used Languages:</strong> ${obj.languages}</p>
             <p style="color:red"><strong>${obj.note[0]}</strong> ${obj.note[1]}</p>
             </div>
@@ -146,7 +147,7 @@ if(params==="freelancer_tab"){
           <img src="${obj.image}" alt="Avatar" class="card_image" style="width:100%;height:150px">
           <div class="card_middle">
             <div class="card_text">
-                <h1><a href="${obj.link}" style="text-decoration: none;">${obj.title}</a></h1>
+                <h3><a href="${obj.link}" style="text-decoration: none;">${obj.title}</a></h3>
                 <p><strong>used Languages:</strong> ${obj.languages}</p>       
                 <p style="color:red"><strong>${obj.note[0]}</strong> ${obj.note[1]}</p>
             </div>
