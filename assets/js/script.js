@@ -1,33 +1,43 @@
 var data = [
   {
     type:"work_tab",    
-    title:"",
-    languages: "",
-    image:"./assets/images/404_page_cover.jpg",
+    title:"Spotify",
+    languages: "Html,Css,javascript",
+    image:"./assets/images/spotify.png",
+    link:"https://spotify-my-self-beaware.netlify.app/",
+    note: ["Note: ","only web"],
   },
   {
     type:"freelancer_tab",   
     title:"",
     languages: "",
     image:"./assets/images/404_page_cover.jpg",
+    link:"#",
+    note: ["Note: ",""],
   },
   {
     type:"work_tab",  
     title:"",
     languages: "",
     image:"./assets/images/404_page_cover.jpg", 
+    link:"#",
+    note: ["Note: ",""],
   },
   {
     type:"work_tab", 
     title:"",
     languages: "",
     image:"./assets/images/404_page_cover.jpg",  
+    link:"#",
+    note: ["Note: ",""],
   },
   {
     type:"freelancer_tab", 
     title:"",
     languages: "",
     image:"./assets/images/404_page_cover.jpg",  
+    link:"#",
+    note: ["Note: ",""],
   },
 ]
 if ($('.typed').length) {
@@ -94,11 +104,12 @@ function AddSheets(params){
     data.map(obj=>{
       output += `
       <div class="cardContainer">
-        <img src="${obj.image}" alt="Avatar" class="card_image" style="width:100%">
+        <img src="${obj.image}" alt="Avatar" class="card_image" style="width:100%;height:150px">
         <div class="card_middle">
           <div class="card_text">
-            <h3>calculator</h3>
-            <p><strong>used Languages:</strong> Html, CSS, Javascript</p>
+          <h1><a href="${obj.link}" style="text-decoration: none;">${obj.title}</a></h1>
+          <p><strong>used Languages:</strong> ${obj.languages}</p>
+          <p style="color:red"><strong>${obj.note[0]}</strong> ${obj.note[1]}</p>
           </div>
         </div>
       </div>
@@ -114,11 +125,12 @@ if(params==="work_tab"){
     if(obj.type ==="work_tab"){
       output += `
         <div class="cardContainer">
-          <img src="${obj.image}" alt="Avatar" class="card_image" style="width:100%">
+          <img src="${obj.image}" alt="Avatar" class="card_image" style="width:100%;height:150px">
           <div class="card_middle">
             <div class="card_text">
-              <h1><a href="#" style="text-decoration: none;">calculator</a></h1>
-              <p><strong>used Languages:</strong> Html, CSS, Javascript</p>
+            <h1><a href="${obj.link}" style="text-decoration: none;">${obj.title}</a></h1>
+            <p><strong>used Languages:</strong> ${obj.languages}</p>
+            <p style="color:red"><strong>${obj.note[0]}</strong> ${obj.note[1]}</p>
             </div>
           </div>
         </div>
@@ -131,12 +143,12 @@ if(params==="freelancer_tab"){
     if(obj.type ==="freelancer_tab"){
       output += `
         <div class="cardContainer">
-          <img src="${obj.image}" alt="Avatar" class="card_image" style="width:100%">
+          <img src="${obj.image}" alt="Avatar" class="card_image" style="width:100%;height:150px">
           <div class="card_middle">
             <div class="card_text">
-              <h3>calculator</h3>
-              <a href="#">link</a>
-              <p><strong>used Languages:</strong> Html, CSS, Javascript</p>
+                <h1><a href="${obj.link}" style="text-decoration: none;">${obj.title}</a></h1>
+                <p><strong>used Languages:</strong> ${obj.languages}</p>       
+                <p style="color:red"><strong>${obj.note[0]}</strong> ${obj.note[1]}</p>
             </div>
           </div>
         </div>
