@@ -293,8 +293,9 @@
     .media .content p{
         flex: 1;
         padding: 10px;
-        font-family: 'Dancing Script', cursive;
-        font-size: 28px;
+        /* font-family: 'Dancing Script', cursive; */
+        font-family: monospace;
+        font-size: 24px;
         font-weight: bolder;
         margin-bottom: 5%;
     }
@@ -324,7 +325,8 @@
             padding: 10px;
             color: white;
             text-align: center;
-            font-family: 'Dancing Script', cursive;
+            /* font-family: 'Dancing Script', cursive; */
+            font-family: monospace;
             margin-bottom: 20px;
         }
         .media .content .btn{
@@ -354,7 +356,8 @@
         .media .content {
             flex: 1;
             padding: 10px;
-            font-family: 'Dancing Script', cursive;
+            /* font-family: 'Dancing Script', cursive; */
+            font-family: monospace;
             font-size: 28px;
             font-weight: bolder;
         }
