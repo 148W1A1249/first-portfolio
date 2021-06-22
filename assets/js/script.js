@@ -63,7 +63,7 @@ function openPage(pageName,btn_id) {
     btn_link[i].style.border = "none";
   } 
   document.getElementById(pageName).style.display = "block";
-  document.getElementById(btn_id).style.border = "1px solid black";
+  document.getElementById(btn_id).style.borderBottom = "1px solid #04AA6D";
   document.getElementById(pageName).innerHTML=""
   workContentShow(pageName);
 }
