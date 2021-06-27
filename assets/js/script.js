@@ -1,6 +1,22 @@
 var data = [
   {
     type:"work_tab",    
+    title:"Invoice",
+    languages: "Html,Css,Bootstrap,javascript,<br/>React,Nodejs,MongoDB",
+    image:"./assets/images/invoice.png",
+    link:"https://invoice-myself-beaware.netlify.app/",
+    note: ["Note: ","support to all devices"],
+  },
+  {
+    type:"work_tab",    
+    title:"Money Manage",
+    languages: "Html,Css,Bootstrap,javascript,<br/>React,Nodejs,MongoDB",
+    image:"./assets/images/moneymanage.png",
+    link:"https://moneymanager-myself-beaware.netlify.app/",
+    note: ["Note: ","support to all devices"],
+  },
+  {
+    type:"work_tab",    
     title:"Spotify",
     languages: "Html,Css,javascript",
     image:"./assets/images/spotify.png",
