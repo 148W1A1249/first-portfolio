@@ -41,11 +41,11 @@ var data = [
   },
   {
     type:"work_tab", 
-    title:"",
-    languages: "",
-    image:"./assets/images/404_page_cover.jpg",  
-    link:"#",
-    note: ["Note: ",""],
+    title:"All projects",
+    languages: "Html,Css,Bootstrap,javascript,<br/>React,Nodejs,MongoDB",
+    image:"./assets/images/projects.jpg",  
+    link:"./assets/projects/projects.html",
+    note: ["Note: ","languages are belong to on by one projects"],
   },
   {
     type:"freelancer_tab", 
