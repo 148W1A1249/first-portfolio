@@ -230,8 +230,8 @@
     @media only screen and (max-width: 1024px) and (min-width: 768px)  {
         .hero__text{
             display: flex;
-            flex-direction: row;
-            justify-content: center;       
+            flex-direction: column;
+            justify-content: center;   
         }
         .hero__content{
             margin: auto;
@@ -241,13 +241,33 @@
         }
         .hero__image{
             margin: auto;
-            margin-top: 30%;
         }
-        .hero__image img{           
-            width: 300px;
-            height: 300px;
+        .hero__image img{    
+            width: 100%;
+            height: 500px;
         }
     }
+    /* @media only screen and (max-width: 1366px) and (min-width: 1024px)  {
+        .hero__text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+        }
+        .hero__content{
+            margin: auto;
+            margin-top: 22%;
+            margin-bottom: 10%;
+            color: white;
+        }
+        .hero__image{
+            margin: auto;
+            margin-top: 20%;
+        }
+        .hero__image img{           
+            width: 100%;
+            height: 500px;
+        }
+    } */
     .hero__content .social-links a {
         font-size: 24px;
         display: inline-block;
@@ -300,7 +320,7 @@
         margin-bottom: 5%;
     }
     .about_sec{
-        height: 300px;
+        height: 180px;
         background: linear-gradient(rgba(0,0,0, .7), rgba(0,0,0, .4)),var(--green); 
     }
     @media(max-width:500px){ 
@@ -341,11 +361,12 @@
         .media {
             height: 150px;
             display: flex;
-            align-items: flex-start;
+            flex-direction: column;
+            align-items: center;
             justify-content: space-between;
         }
         .media .image img{
-            margin: 50px 100px;
+            margin: 40px 30px;
             width: 200px;
             height: 200px;
             border-radius: 50%;
@@ -353,16 +374,20 @@
         .media .image img:hover{
             box-shadow: 10px 4px 2px 2px rgba(248, 7, 7, 0.2);
         }
-        .media .content {
+        .media .content p{
             flex: 1;
             padding: 10px;
+            color: white;
+            text-align: center;
             /* font-family: 'Dancing Script', cursive; */
             font-family: monospace;
-            font-size: 28px;
-            font-weight: bolder;
+            margin-bottom: 20px;
+        }
+        .media .content .btn{
+            margin-left: 25%;
         }
         .about_sec{
-            height: 300px;
+            height: 400px;
             background: linear-gradient(rgba(0,0,0, .7), rgba(0,0,0, .4)),var(--green); 
         }
     }
@@ -531,6 +556,54 @@
             height: 600px;
         }
     }
+
+        /* mail section modal */
+            .modal{
+                background-color: white;
+                width: 40%;height: 100px;
+                margin-left: 30%;
+                margin-top: -80px;
+                border-radius: 12px;
+                display: none;
+            }
+            .modal-container{
+
+            }
+            .body-text{
+                margin-left: 50px;
+            }
+            @media(max-width: 500px) {
+                .modal{
+                    background-color: white;
+                    position: absolute;
+                    width: 90%;
+                    height: 130px;
+                    margin: 0px;
+                    margin-left: 20px;
+                    margin-top: -250px;
+                    border-radius: 12px;
+                    display: none;
+                    z-index: 1;
+                }
+                .body-text{
+                    margin-left: 10px;
+                }
+            }
+            @media only screen and (max-width: 1024px) and (min-width: 768px)  {
+                .modal{
+                    background-color: white;
+                    position: absolute;
+                    width: 90%;
+                    height: 130px;
+                    margin: 0px;
+                    margin-left: 20px;
+                    margin-top: -250px;
+                    border-radius: 12px;
+                    display: none;
+                    z-index: 1;
+                }
+              }
+        /* mail section modal */
     /* contact section End */
 
 /* main Section End */

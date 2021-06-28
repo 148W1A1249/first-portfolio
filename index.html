@@ -36,13 +36,13 @@
                 <h1>Khasim Sharif Shaik</h1>
                 <p>I'M &ensp;<span style="color: #04AA6D;" class="typed" data-typed-items="A Full stack Developer., A Machine Learning Enthusiast., Freelancer., Photographer."></span></p>
                 <a href="#contact" class="btn">Get in touch</a>
-                <div class="social-links mt-3 text-center">
+                <!-- <div class="social-links mt-3 text-center">
                     <a href="#" class="twitter"><i class="fa fa-twitter"></i></i></a>
                     <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
                     <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
                     <a href="#" class="google-plus"><i class="fa fa-skype"></i></a>
                     <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-                </div>
+                </div> -->
             </div>
             <div class="hero__image">
                 <img src="./assets/images/hero.png">
@@ -68,7 +68,7 @@
             <div class="image"><img src="./assets/images/about.jpg"  alt="About Image"></div>
               <div class="content">
                   <p>Graduate of computer science with experience working across the full-stack of software development. I’ve built projects on small teams and I’m looking for a role where I can grow and continue to learn from other experienced team members..</p>
-                  <a href="#" class="btn">My Resume</a>
+                  <a href="https://drive.google.com/file/d/1Hju9CoNZvp8S2K6CrH5L-6mwlkz0d4ih/view" class="btn">My Resume</a>
                 </div>
           </div>
     </section> 
@@ -118,7 +118,22 @@
         <div class="contact_text">
             <span>Are you looking for a fast-performing and user-friendly website to represent your product or business? or looking for any kind of consultation? or want to ask questions? or have some advice for me or just want to say "Hi 👋" in any case feel free to Let me know. I will do my best to respond back. 😊 The quickest way to reach out to me is via an email.</span>
         </div>
-        <a href="#" class="btn" style="margin-left:15%;">Mail Me</a>
+        <button onclick="document.getElementById('id01').style.display='block'" class="btn" style="margin-left:15%;">Mail Me</button>
+        <div id="id01" class="modal" style="">
+            <div class="modal-content">
+                <h1 style="color:red;text-align: center;padding: 10px;">Contact Details</h1>
+                <hr/>
+              <div class="modal-container">
+                <div style="margin-right: 20px;margin-top: 10px;">
+                    <span onclick="document.getElementById('id01').style.display='none'" style="float: right;font-size: 24px;background-color: #04AA6D;color:white;padding: 5px 15px;">&times;</span>
+                </div>
+                <div class="body-text">
+                    <h4 style="color:#04AA6D"><b>Mail: </b>khasimsharif30@gmail.com</h4>
+                    <h4 style="color:#04AA6D"><b>Phone: </b>9100393600</h4>
+                </div>
+              </div>
+            </div>
+        </div>
     </section>
     <!--/////////////////////////// contact section End ///////////////////////////-->
     
