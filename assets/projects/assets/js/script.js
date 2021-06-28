@@ -26,7 +26,7 @@ let card_output='';
 card.forEach(obj => {
     card_output +=`
     <div class="col-md-4 mt-3 mb-3">
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 16rem;">
         <img class="card-img-top" src="${obj.img}" alt="Card image cap" height="150px">
         <div class="card-body" style="height:200px">
             <h5 class="card-title">${obj.title}</h5>
