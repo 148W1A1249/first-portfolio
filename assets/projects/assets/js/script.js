@@ -25,7 +25,7 @@ var projects = document.querySelector('#projects');
 let card_output='';
 card.forEach(obj => {
     card_output +=`
-    <div class="col-md-4 mt-3">
+    <div class="col-md-4 mt-3 mb-3">
         <div class="card" style="width: 18rem;">
         <img class="card-img-top" src="${obj.img}" alt="Card image cap" height="150px">
         <div class="card-body" style="height:200px">
