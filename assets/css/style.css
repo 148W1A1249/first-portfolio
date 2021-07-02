@@ -290,6 +290,19 @@
    
     /* hero__text End */
 
+    /* whatsapp */
+    .contact_whatsapp{
+        position: fixed;
+        z-index: 999;
+        bottom: 0;
+        right: 0;
+        margin: 20px;
+    }
+    .contact_whatsapp a img{
+        width: 50px;
+    }
+    /* whatsapp */
+
 /* header section */
 
 /* main Section Start */
