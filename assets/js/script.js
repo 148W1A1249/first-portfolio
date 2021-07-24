@@ -1,6 +1,14 @@
 var data = [
   {
     type:"work_tab",    
+    title:"Hotstar",
+    languages: "React.js,Firebase",
+    image:"./assets/images/hotstar.png",
+    link:"https://disneyplus-clone-8b660.web.app/",
+    note: ["Note: ","support to all devices"],
+  },
+  {
+    type:"work_tab",    
     title:"Invoice",
     languages: "Html,Css,Bootstrap,javascript,<br/>React,Nodejs,MongoDB",
     image:"./assets/images/invoice.png",
