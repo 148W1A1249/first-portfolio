@@ -320,9 +320,9 @@
         height: 200px;
         border-radius: 50%;
     }
-    .media .image img:hover{
-        box-shadow: 10px 4px 2px 2px rgba(248, 7, 7, 0.2);
-    }
+    /* .media .image img:hover{
+        box-shadow: 10px 4px 2px 2px rgba(119, 117, 117, 0.2);
+    } */
     .media .content p{
         flex: 1;
         padding: 10px;
@@ -579,9 +579,7 @@
                 border-radius: 12px;
                 display: none;
             }
-            .modal-container{
-
-            }
+            
             .body-text{
                 margin-left: 50px;
             }

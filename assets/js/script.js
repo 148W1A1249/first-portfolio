@@ -9,6 +9,14 @@ var data = [
   },
   {
     type:"work_tab",    
+    title:"Quran Tilawat",
+    languages: "React.js",
+    image:"./assets/images/quran.png",
+    link:"https://quran-tilawat.netlify.app/",
+    note: ["Note: ","support to all devices"],
+  },
+  {
+    type:"work_tab",    
     title:"Invoice",
     languages: "Html,Css,Bootstrap,javascript,<br/>React,Nodejs,MongoDB",
     image:"./assets/images/invoice.png",
