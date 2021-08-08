@@ -25,6 +25,14 @@ var data = [
   },
   {
     type:"work_tab",    
+    title:"House Recommendation",
+    languages: "React,MockApi",
+    image:"./assets/images/bestHouse.png",
+    link:"https://house-selection.netlify.app/",
+    note: ["Note: ","support to all devices"],
+  },
+  {
+    type:"work_tab",    
     title:"Money Manage",
     languages: "Html,Css,Bootstrap,javascript,<br/>React,Nodejs,MongoDB",
     image:"./assets/images/moneymanage.png",
